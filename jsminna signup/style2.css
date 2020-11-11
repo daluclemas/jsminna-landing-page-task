@@ -1,0 +1,186 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+:root{
+    --picasso-blue:hsl(231, 69%, 60%);;
+    --white-color:rgb(241, 234, 234);
+    --font-color:white;
+}
+
+
+@font-face{
+    font-family:rubik;
+    src:url('rubik/Rubik-Regular.ttf');
+}
+
+body{
+    background-color:var(--picasso-blue);
+    font-family:rubik;
+    font-size:24px;
+    color:var(--font-color);
+}
+
+#container{
+    max-width:50%;
+    width:1440px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:30px;
+    display:block;
+}
+
+#login-container{
+    background-color:var(--white-color);
+    color:grey;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    padding:40px;
+    vertical-align:center;
+}
+
+/*the login textcontainer*/
+#header{
+    margin-bottom:5px;
+}
+
+#header-text{
+    color:black;
+    text-transform:capitalize;
+    font-weight:700;
+}
+
+#body-text::first-letter{
+    text-transform:uppercase;
+}
+
+hr{
+    margin-bottom:10px;
+}
+
+/*form inputs*/
+
+#email-container,#password-container{
+    display:flex;
+    margin-bottom:20px;
+    flex-direction:column;
+}
+
+.demo{
+    font-size:14px;
+    margin:5px;
+}
+
+.input{
+    height:40px;
+    border-radius:5px;
+    border:none;
+    padding:10px;
+}
+
+.input2{
+    max-width:100%;
+    width:535px;
+}
+
+input[placeholder]{
+    font-size:16px;
+    padding:10px;
+}
+
+#remember-password{
+    text-transform:capitalize;
+    font-size:14px;
+}
+
+#password-container{
+    position:relative;
+}
+
+#eye{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:5px solid black;
+    position:absolute;
+    cursor:pointer;
+    right:10px;
+    bottom:25px;
+}
+
+/*login button*/
+#btn{
+    border:none;
+    color:white;
+    background:var(--picasso-blue);
+    padding:10px;
+    width:100px;
+    text-transform:capitalize;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+    opacity:0.5;
+}
+
+h5{
+    margin-top:10px;
+    font-weight:500;
+}
+
+h5 a{
+    text-transform:capitalize;
+    cursor:pointer;
+    color:white;
+}
+
+@media only screen and (max-width:768px){
+    #container{
+        max-width:90%;
+        padding:10px;
+    }
+
+    #signup-container{
+        padding:30px;
+    }
+
+    hr{
+        margin-bottom:15px;
+    }
+
+    /*form container*/
+    #email-container,#password-container{
+        margin-bottom:15px;
+    }
+
+    .input{
+        height:40px;
+        border-radius:5px;
+        border:none;
+        padding:10px;
+    }
+
+    input[placeholder]{
+        font-size:14px;
+    }
+
+    /*btn*/
+    #btn{
+        border:none;
+        color:white;
+        background:var(--picasso-blue);
+        padding:10px;
+        width:80px;
+        text-transform:capitalize;
+        font-size:16px;
+        cursor:pointer;
+        margin-top:5px;
+    }
+    
+    h5{
+        font-size:15px;
+    }
+}

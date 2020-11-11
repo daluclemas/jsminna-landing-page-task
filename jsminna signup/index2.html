@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSMINNA LOGIN</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="logo.png">
+</head>
+<body>
+    <div id="container">
+
+        <div id="login-container">
+
+            <div id="header">
+                <!--header-->
+                 <h1 id="header-text">login</h1>
+                 <p id="body-text">please login to continue.</p> 
+            </div>
+            <hr>
+
+            <div id="form-container">
+
+                <form name="form" method="POST" id="form">
+
+                    <div id="email-container" class="email-container">
+
+                        <label for="email"></label>
+                        <input type="email" name="emailaddress" id="email" placeholder="abc@example.com" class="input input2 input3" required>
+
+                        <span id="err-text-email" class="demo email-err"></span>
+
+                    </div>
+
+
+                    <div id="password-container" class="password-container">
+
+                        <label for="password"></label>
+                        <input type="password" name="password" id="password" placeholder="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{,8}" class="input input2" required><span id="eye"></span>
+
+                        <span id="err-text-password" class="demo password-err"></span> 
+
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="rememberpassword" id="cbox" class="input4">
+
+                        <span id="remember-password" >
+                            remember password?
+                        </span>
+                    </div>
+                    
+                    <div id="btn-holder">
+                        <button id="btn" class="btn" type="submit" disabled>login</button>
+        
+                        <div id="loader"></div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <h5>Forgot Password? <a target="_blank" href="#">click here</a></h5>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+:root{
+    --picasso-blue:hsl(231, 69%, 60%);;
+    --white-color:rgb(241, 234, 234);
+    --font-color:white;
+}
+
+
+@font-face{
+    font-family:rubik;
+    src:url('rubik/Rubik-Regular.ttf');
+}
+
+body{
+    background-color:var(--picasso-blue);
+    font-family:rubik;
+    font-size:24px;
+    color:var(--font-color);
+}
+
+#container{
+    max-width:50%;
+    width:1440px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:30px;
+    display:block;
+}
+
+#signup-container{
+    background-color:var(--white-color);
+    color:grey;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:40px;
+}
+
+/*the signup textcontainer*/
+#header{
+    margin-bottom:5px;
+}
+
+#header-text{
+    color:black;
+    text-transform:capitalize;
+    font-weight:700;
+}
+
+#body-text::first-letter{
+    text-transform:uppercase;
+}
+
+hr{
+    margin-bottom:20px;
+}
+
+/*form container*/
+#form-container{
+    font-size:16px;
+    margin-bottom:8px;
+}
+
+.demo{
+    font-size:14px;
+}
+
+input[placeholder]{
+    font-size:16px;
+    padding:10px;
+    text-transform:capitalize;
+}
+
+.input2{
+    height:40px;
+    border-radius:5px;
+    border:none;
+    padding:10px;
+    max-width:100%;
+    width:535px;
+}
+
+/*form inputs for fitst-name and last-name*/
+
+#fname-lname{
+    display:flex;
+    margin-bottom:20px;
+}
+
+#firstname-container{
+    display:flex;
+    flex-direction:column;
+}
+
+#lastname-container{
+    display:flex;
+    flex-direction:column;
+    margin-left:15px;
+}
+
+#fname-lname input{
+    max-width:100%;
+    width:260px;
+    height:40px;
+    border-radius:5px;
+    border:none;
+    padding:10px;
+    margin-bottom:5px;
+}
+
+/*email input*/
+#email-container{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input3[placeholder]{
+    text-transform:lowercase;
+}
+
+/*password and confirm password*/
+#password-container{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.eye{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:5px solid black;
+    position:absolute;
+    cursor:pointer;
+    right:20px;
+    bottom:15px;
+}
+
+#confirm-password-container{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+    position:relative;
+}
+
+/*terms and conditions*/
+span a{
+    text-transform:capitalize;
+    color:var(--picasso-blue);
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/*submit button*/
+#btn{
+    border:none;
+    color:white;
+    background:var(--picasso-blue);
+    padding:10px;
+    width:100px;
+    text-transform:capitalize;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+    opacity:0.5;
+}
+
+#btn-holder{
+    position:relative;
+}
+
+#loader{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:12px solid grey;
+    border-top:12px solid rgb(41, 41, 230);
+    animation:spin 1s linear infinite;
+    position:absolute;
+    top:12px;
+    visibility:hidden;
+}
+
+@keyframes spin{
+    100%{transform:rotate(360deg);}
+}
+
+h5{
+    margin-top:10px;
+    font-weight:500;
+    text-align:center;
+}
+
+h5::first-letter{
+    text-transform:uppercase;
+}
+
+h5 a{
+    text-transform:capitalize;
+    cursor:pointer;
+    color:white;
+}
+
+@media only screen and (max-width:1350px) and (min-width:993px){
+    
+
+    /*form container*/
+    #fname-lname{
+        flex-direction:column;
+        border:1px solid blue;
+    }
+
+    #lastname-container{
+        margin-left:0px;
+    }
+
+    #firstname-container{
+        margin-bottom:20px;
+    }
+
+    #fname-lname input{
+        width:535px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    #container{
+        max-width:90%;
+        width:500px;
+        padding:10px;
+    }
+
+    #signup-container{
+        padding:30px;
+    }
+
+    hr{
+        margin-bottom:15px;
+    }
+
+    /*form container*/
+
+    #fname-lname{
+        flex-direction:column;
+    }
+
+    #fname-lname input{
+        width:535px;
+    }
+
+    #firstname-container{
+        margin-bottom:20px;
+    }
+
+    #lastname-container{
+        margin-left:0px;
+    }
+
+    .input{
+        margin-bottom:15px;
+        height:40px;
+        border-radius:5px;
+        border:none;
+        padding:10px;
+    }
+
+    input[placeholder]{
+        font-size:14px;
+    }
+
+    .cbox{
+        font-size:16px;
+    }
+
+    .eye{
+        bottom:30px;
+    }
+
+    /*btn*/
+    #btn{
+        border:none;
+        color:white;
+        background:var(--picasso-blue);
+        padding:10px;
+        width:80px;
+        text-transform:capitalize;
+        font-size:16px;
+        cursor:pointer;
+        margin-top:5px;
+    }
+    
+    h5{
+        font-size:15px;
+    }
+}
+
+

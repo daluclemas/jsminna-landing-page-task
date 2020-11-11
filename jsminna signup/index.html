@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSMINNA SIGN UP AND LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png">
+</head>
+<body>
+    <div id="container">
+
+        <div id="signup-container">
+
+            <div id="header">
+               <!--header-->
+                <h1 id="header-text">sign up</h1>
+                <p id="body-text">please fill in this form to create an account.</p> 
+            </div>
+
+            <hr>
+
+            <div id="form-container" class="form">
+
+                <form id="form" name="form" method="POST">
+
+                    <div id="fname-lname"><!--container for the lastname and first name-->
+
+                        <div id="firstname-container" class="firstname-container">
+
+                            <label for="fname"></label>
+                            <input type="text" name="firstname" id="fname" placeholder="first name" class="input input4" required>
+                            
+                            <span id="err-text-1" class="demo fname-err"></span>
+
+                        </div>
+
+                        <div id="lastname-container" class="lastname-container">
+
+                            <label for="lname"></label>
+                            <input type="text" name="lastname" id="lname" placeholder="last name" class="input input4" required>
+
+                            <span id="err-text-2" class="demo lname-err"></span>
+
+                        </div>                    
+
+                    </div>
+
+                    <div id="email-container" class="email-container">
+
+                        <label for="email"></label>
+                        <input type="email" name="emailaddress" id="email" placeholder="abc@example.com" class="input input2 input3" required>
+
+                        <span id="err-text-email" class="demo email-err"></span>
+
+                    </div>
+                   
+
+                    <div id="password-container" class="password-container">
+
+                        <label for="password"></label>
+                        <input type="password" name="password" id="password" placeholder="password" class="input input2" required><span id="eye" class="eye"></span>
+
+                        <span id="err-text-password" class="demo password-err"></span> 
+
+                    </div>
+                    
+
+                    <div id="confirm-password-container" class="confirm-password-container" required>
+
+                        <label for="cpassword"></label>
+                        <input type="password" name="cpassword" id="cpassword" placeholder="confirm password" class="input input2"><span id="eye2" class="eye"></span>
+
+                        <span id="err-text-password2" class="demo cpassword-err"></span>
+
+                    </div>
+                    
+
+                    <div id="checkbox-container" class="checkbox-container">
+
+                        <label for="cbox"></label>
+
+                        <input type="checkbox" name="checkbox" id="cebox" class="checkbox">
+
+                        <span for="cbox" class="cbox">
+
+                            I accept the <a href="#">terms of use</a> & <a href="#">privacy policy</a>
+
+                        </span>
+
+                    </div>
+                   
+
+                    <div id="btn-holder" class="btn-holder">
+
+                        <button id="btn" class="btn" type="submit" disabled>sign up</button>
+    
+                        <div id="loader"></div>
+                    </div>
+
+
+                </form> 
+ 
+            </div>
+            
+        </div>
+
+        <h5>already have an account? <a target="_blank" href="index2.html">login here</a></h5>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
